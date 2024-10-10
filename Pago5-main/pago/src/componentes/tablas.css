@@ -1,0 +1,32 @@
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #002c6a !important;
+  color: #ffffff !important;
+}
+
+.btnAdmn {
+  color: black;
+  background-color: #d9d9d9;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.btnEdit {
+  background-color: #fbebcb;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.accrd{
+    width: 800px !important;
+    margin: 50px auto !important;
+}

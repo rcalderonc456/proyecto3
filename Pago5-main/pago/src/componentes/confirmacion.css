@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  }
+
+  header {
+    background-color: #002c6a;
+    border-bottom: 1px solid #ccc;
+    padding: 40px 0;
+     
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  .logo {
+    float: left;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .logo h1 {
+    float: left; 
+  }
+
+  .navegacion {
+    /* Remove float: center */
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacion ul li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  .navegacion ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+  }
+
+  .navegacion ul li a:active,
+.navegacion ul li a.activo {
+    font-weight: bold;
+}
+
+.usuario p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.loader::after,
+.loader::before{
+    animation: loader 2s linear infinite;
+    content: '';
+    border: 10px solid #002c6a;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30%; 
+    left: 42%; 
+    border-radius: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.loader::after{
+    opacity: 0;
+    animation-delay: 1s;
+}
+.mensajes-debajo{
+    color: black;
+    text-align: center; 
+    margin-bottom: 20px;
+    
+}
+.mensaje {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    top: 200px; 
+    display: none;
+    transition: font-size 1s, top 1s;; 
+}
+
+.mensaje.grande {
+    top: 400px; 
+    font-size: 100px; 
+    transition: font-size 3s;
+}
+.mensaje.pequeno {
+    font-size: 50px; 
+}
+
+.numero-confirmacion {
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; 
+    top: 280px;
+}
+
+ /* Estilos para el pie de página */
+ footer {
+  background-color: #002c6a;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+  margin-top: auto;
+
+}

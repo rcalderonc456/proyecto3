@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Inter;
+  src: url(pago\src\componentes\font\Inter-Regular.ttf);
+}
+
+* {
+  font-family: Inter !important;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #002c6a;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.logo h1 {
+  float: left;
+}
+
+.navegacion {
+  /* Remove float: center */
+}
+
+.navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+.navegacion ul li a:active,
+.navegacion ul li a.activo {
+  font-weight: bold;
+}
+
+.usuario {
+  /* Remove float: right */
+}
+
+.usuario p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+main {
+  flex: 1;
+}
+
+.texto h1 {
+  text-align: center;
+}
+.texto h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Estilo específico para el Wallet y Paypal*/
+
+.pago .check {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.pago .check.activo {
+  display: inline-block;
+}
+
+.wallet h3,
+h4,
+h5 {
+  text-align: center;
+  font-size: 15px;
+}
+.input-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-container label {
+  display: block;
+}
+
+.valido-hasta-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.cvv label {
+  margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+}
+.cvv input {
+  width: 5%;
+  margin-right: -26px;
+}
+
+.cvv button {
+}
+input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* Añade este estilo para hacer que los inputs tengan fondo gris */
+input[type="text"],
+input[type="password"] {
+  box-sizing: border-box;
+  background-color: rgb(189, 189, 189); /* Fondo gris */
+}
+
+.compras {
+  text-align: center;
+}
+
+.metodo-pago {
+  display: inline-block;
+  margin: 0 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #002c6a;
+  border-radius: 5px;
+}
+
+.metodo-pago.selected {
+  background-color: #00cc00; /* Color verde cuando está seleccionado */
+}
+
+.metodo-pago.selected:hover {
+  background-color: #00cc00; /* Mantener el color verde al pasar el ratón sobre el botón */
+}
+
+.wallet {
+  margin-top: 20px;
+}
+
+#numero-tarjeta {
+  font-family: monospace;
+}
+
+.paypal {
+  margin-top: 20px;
+}
+
+#aceptar-btn {
+  background-color: rgb(189, 189, 189);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#aceptar-btn:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #002c6a;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+  margin-top: auto;
+}
+
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hace que el wrapper ocupe el 100% del alto de la ventana */
+}

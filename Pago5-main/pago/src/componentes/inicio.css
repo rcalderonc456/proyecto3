@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Inter;
+  src: url(../font/Inter-Regular.ttf);
+}
+
+* {
+  font-family: Inter !important;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #002c6a;
+  align-items: center;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  width: 100%;
+}
+
+.navbar-title {
+  float: left;
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  /* padding: 20px; */
+  text-decoration: none;
+  font-size: 19px;
+}
+
+nav ul li a:hover {
+  /* background-color: #3579be4d; */
+  text-decoration: none;
+  /* text-decoration-color: #357abe; */
+  cursor: pointer;
+}
+
+li {
+  display: block;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  padding-top: 20px;
+}
+
+.header {
+  padding: 150px;
+  background-image: url(../src/images/Group6.png);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+.ofertas {
+  padding: 70px;
+  background-color: #002c6a;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+.btn-of {
+  background-color: #f8d99b;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px #616060;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
